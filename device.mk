@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
     
 # HIDL
 PRODUCT_COPY_FILES += \
-    device/Infinix/X556/hidl/manifest.xml:system/vendor/manifest.xml
+    device/coolpad/CP8298_I00/hidl/manifest.xml:system/vendor/manifest.xml
     
 
 # Ramdisk

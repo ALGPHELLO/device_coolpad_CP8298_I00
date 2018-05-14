@@ -8,8 +8,8 @@ LOCAL_SRC_FILES := \
 #	ge.c
 
 LOCAL_C_INCLUDES := \
-	device/Infinix/X556/libgralloc_extra/include \
-	device/Infinix/X556/libgralloc_extra/../include
+	device/coolpad/CP8298_I00/libgralloc_extra/include \
+	device/coolpad/CP8298_I00/libgralloc_extra/../include
 
 LOCAL_SHARED_LIBRARIES := \
     libhardware \
@@ -20,7 +20,7 @@ LOCAL_SHARED_LIBRARIES := \
 	libged
 
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
-	device/Infinix/X556/libgralloc_extra/include
+	device/coolpad/CP8298_I00/libgralloc_extra/include
 
 LOCAL_C_INCLUDES += \
 	system/core/libion/include \

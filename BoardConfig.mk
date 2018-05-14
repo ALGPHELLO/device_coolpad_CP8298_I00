@@ -1,9 +1,8 @@
 DEVICE_PATH := device/coolpad/CP8298_I00
-VENDOR_PATH := vendor/Infinix/X556
+VENDOR_PATH := vendor/coolpad/CP8298_I00
 
 # inherit from the proprietary version
 -include vendor/coolpad/CP8298_I00/BoardConfigVendor.mk
-
 
 # Architecture
 # FORCE_32_BIT := true

@@ -7,7 +7,7 @@ PRODUCT_RELEASE_NAME := CP8298_I00
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/Infinix/CP8298_I00/device.mk)
+$(call inherit-product, device/coolpad/CP8298_I00/device.mk)
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
