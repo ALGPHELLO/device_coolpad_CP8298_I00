@@ -1,34 +1,33 @@
-#
-# Copyright (C) 2015-2016 The CyanogenMod Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+## Specify phone tech before including full_phone
+
+# Release name
+PRODUCT_RELEASE_NAME := CP8298_I00
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/Infinix/CP8298_I00/device.mk)
 
-# Device display
-TARGET_SCREEN_HEIGHT := 1080
+TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+DEVICE_RESOLUTION := 720x1280
 
-# Device identifier
-PRODUCT_BRAND := coolpad
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := CP8298_I00
-PRODUCT_MANUFACTURER := COOLPAD
-PRODUCT_MODEL := CP8298_I00
 PRODUCT_NAME := lineage_CP8298_I00
-PRODUCT_RELEASE_NAME := CP8298_I00
-PRODUCT_RESTRICT_VENDOR_FILES := false
+PRODUCT_BRAND := coolpad
+PRODUCT_MODEL := Coolpad Note 3 Lite
+PRODUCT_MANUFACTURER := coolpad
+
+PRODUCT_GMS_CLIENTID_BASE := android-google
+
+# Available languages
+PRODUCT_LOCALES := ru_RU en_US en_GB tr_TR sk_SK vi_VN fr_FR ar_EG
+
+# Build fingerprint from Indian variant.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=CP8298_I00 \
+    PRODUCT_NAME=lineage_CP8298_I00 \
+        PRIVATE_BUILD_DESC="CP8298_I00-user 8.1.0 NRD90M 1514531179 release-keys"
+	BUILD_FINGERPRINT := coolpad/coolpad/CP8298_I00:8.1.0/NRD90M/X556-H371A-N-171229V207:user/release-keys
